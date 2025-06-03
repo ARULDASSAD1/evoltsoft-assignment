@@ -44,7 +44,7 @@ export default {
     },
     async fetchChargers() {
       try {
-        const res = await axios.get('http://localhost:3000/chargers');
+        const res = await axios.get('https://evoltsoft-assignment-8enw.onrender.com/chargers');
         this.chargers = res.data;
         this.addMarkers();
       } catch (err) {
